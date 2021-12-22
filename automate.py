@@ -30,7 +30,7 @@ class postionorder():
     def upgrade(self):
         if self.orderid == 0 or self.tpid == 0 or self.slid ==0:
             return 0
-        request_client = RequestClient(api_key='iCbttLmZY0donN6Intz6ugDzClWvjXYymfgmFtgVL42oC0yAdfzksLpPnoHkDLwJ', secret_key='eo8auIjXwXXpxjqrVl6yu6l0dOOyjAt113VzHEPLllwQBrN9kizE4ZL8OKisbQcJ')
+        request_client = RequestClient()
         #result = request_client.cancel_order(symbol="BTCUSDT", orderId=self.tpid)
         #result = request_client.cancel_order(symbol="BTCUSDT", orderId=self.slid)
         self.bbol = bollindicator('BTCUSDT',self.number)
